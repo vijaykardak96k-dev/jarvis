@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maharashtra Forts</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav h2 {
+  color: #00ffcc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero span {
+  color: #00ffcc;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #00ffcc;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* FORTS SECTION */
+.section {
+  padding: 80px 60px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.forts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>FortXplore</h2>
+  <ul>
+    <li>Home</li>
+    <li>Forts</li>
+    <li>Gallery</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>Explore <span>Maharashtra Forts</span></h1>
+    <p>Where history meets adventure</p>
+    <button>Start Journey</button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Famous Forts</h2>
+  <div class="forts">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Raigad_fort.jpg">
+      <h3>Raigad Fort</h3>
+      <p>Capital of Chhatrapati Shivaji Maharaj.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Sinhagad_fort.jpg">
+      <h3>Sinhagad Fort</h3>
+      <p>Famous trekking destination near Pune.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Pratapgad_Fort.jpg">
+      <h3>Pratapgad Fort</h3>
+      <p>Historic fort with stunning views.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 FortXplore Maharashtra 🚩
+</footer>
+
+</body>
+</html>
+
